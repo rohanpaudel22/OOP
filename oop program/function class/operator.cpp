@@ -3,7 +3,7 @@
 
 // postfix operation dummy argument/ prefix ()
 
-// .....................//prefix//..........
+// .....................//<<prefix increment>>//..........
 #include<iostream>
 using namespace std;
 
