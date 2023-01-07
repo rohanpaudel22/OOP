@@ -1,19 +1,17 @@
 #include<iostream>
 using namespace std;
 
-class division{
+class relation{
+    
+    public:
     int a;
 
-    public:
     void setdata(){
         cout<<"Enter data:"<<endl;
         cin>>a;
     }
-    void display(){
-        
-        
-    }
-    int operator <(division A){
+    
+    int operator <(relation A){
         if(a<A.a){
             return 1;
         }
@@ -25,10 +23,18 @@ class division{
 
 };
 int  main(){
-    division A1 , A2 , A3;
+    relation A1 , A2 ;
     A1.setdata();
     A2.setdata();
-    A3=A1<A2;
-    if(A1<A2)
-    A3.display();
+
+    if(A1<A2){
+        cout<<"The largest number is:"<<A2.a<<endl;
+    }
+    else{
+        cout<<"The largest number is:"<<A1.a<<endl;
+    }
+    
+    
+    
+
 }
