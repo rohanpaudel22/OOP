@@ -11,8 +11,8 @@ class relation{
         cin>>a;
     }
     
-    int operator <(relation A){
-        if(a<A.a){
+    int operator >(relation A){
+        if(a>A.a){
             return 1;
         }
         else{
@@ -27,11 +27,11 @@ int  main(){
     A1.setdata();
     A2.setdata();
 
-    if(A1<A2){
-        cout<<"The largest number is:"<<A2.a<<endl;
+    if(A1>A2){
+        cout<<"The largest number is:"<<A1.a<<endl;
     }
     else{
-        cout<<"The largest number is:"<<A1.a<<endl;
+        cout<<A1.a<<"is not largest number"<<endl;
     }
     
     
