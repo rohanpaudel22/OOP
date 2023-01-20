@@ -32,8 +32,8 @@ public:
     {
         cout<< y << endl
              << z << endl
-             << p << endl;
-             return output(); //here x is not access as it is private in base class A. and x can be access by returning function.
+             << p << endl; //here x cannot be asscess as it data is private in base class A.
+             return output(); // and x can be access by returning function.
     }
 };
 class C : B
