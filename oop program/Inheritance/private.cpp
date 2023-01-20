@@ -3,18 +3,24 @@ using namespace std;
 class A
 { // base class....
 private:
-    int x;
+    int x=46;
 
 protected:
     int y;
 
 public:
     int z;
+    void display1(){
+        cout<<x<<endl;
+    }
     A()
     {
-        x = 10;
+        
         y = 40;
         z = 60;
+    }
+    void output(){
+        cout<<x<<endl;
     }
 };
 class B :protected A // derived class....
@@ -24,9 +30,10 @@ class B :protected A // derived class....
 public:
     void display()
     {
-        cout << y << endl
+        cout<< y << endl
              << z << endl
-             << p << endl; //here x is not access as it is private in base class A.
+             << p << endl;
+             return output(); //here x is not access as it is private in base class A. and x can be access by returning function.
     }
 };
 class C : B
